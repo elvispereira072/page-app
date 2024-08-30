@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Vídeos - Página Inicial</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Banner de Vídeo */
+        .video-banner {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-banner video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-banner .cta {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+        }
+
+        .video-banner .cta h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .video-banner .cta a {
+            padding: 10px 20px;
+            background: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Menu Responsivo */
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar .navbar-brand, .navbar .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        /* Galeria de Vídeos */
+        .video-gallery {
+            padding: 50px 0;
+        }
+
+        .video-gallery h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .video-gallery .video-item {
+            margin-bottom: 20px;
+        }
+
+        .video-gallery .video-item iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+        /* Área de Destaques */
+        .featured-videos {
+            padding: 50px 0;
+            background-color: #f7f7f7;
+        }
+
+        .featured-videos h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .featured-videos .video-item {
+            margin-bottom: 20px;
+        }
+
+        /* Feed de Redes Sociais */
+        .social-feed {
+            padding: 50px 0;
+        }
+
+        .social-feed h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .social-feed iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+        /* Mapa Interativo */
+        .contact-section {
+            padding: 50px 0;
+        }
+
+        .contact-section iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu Responsivo -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Empresa de Vídeos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Destaques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner de Vídeo -->
+    <section class="video-banner">
+        <video autoplay muted loop>
+            <source src="https://web.facebook.com/reel/2764878733680287/" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+        <div class="cta">
+            <h1>Bem-vindo à Nossa Empresa</h1>
+            <a href="#galeria">Conheça Nossos Produtos</a>
+        </div>
+    </section>
+
+    <!-- Galeria de Vídeos -->
+    <section class="video-gallery container" id="galeria">
+        <h2>Galeria de Vídeos</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 video-item">
+                <iframe src="https://www.youtube.com/embed/jpxjSk76Tts"></iframe>
+            </div>
+            <div class="col-md-6 col-lg-3 video-item">
+                <iframe src="https://www.youtube.com/embed/jpxjSk76Tts"></iframe>
+            </div>
+            <div class="col-md-6 col-lg-3 video-item">
+                <iframe src="https://www.youtube.com/embed/jpxjSk76Tts"></iframe>
+            </div>
+            <div class="col-md-6 col-lg-3 video-item">
+                <iframe src="https://www.youtube.com/embed/jpxjSk76Tts"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Área de Destaques -->
+    <section class="featured-videos container">
+        <h2>Vídeos em Destaque</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 video-item">
+                <iframe src="https://www.youtube.com/embed/jpxjSk76Tts"></iframe>
+            </div>
+            <div class="col-md-6 col-lg-3 video-item">
+                <iframe src="https://www.youtube.com/embed/jpxjSk76Tts"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feed de Redes Sociais -->
+    <section class="social-feed container">
+        <h2>Nos Siga nas Redes Sociais</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <iframe src="https://www.youtube.com/embed/jpxjSk76Tts"></iframe>
+            </div>
+            <div class="col-md-6">
+                <iframe src="https://www.youtube.com/embed/jpxjSk76Tts"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa Interativo -->
+    <section class="contact-section container">
+        <h2>Localização</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0860479060023!2d-46.65077478502241!3d-23.591287684667985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59e80e9f7a89%3A0x7b17f4bdb1bd9fa!2sAv.%20Paulista%2C%201576%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-200%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1637022616939!5m2!1spt-BR!2sus"></iframe>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Empresa de Vídeos. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
